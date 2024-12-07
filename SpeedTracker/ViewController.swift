@@ -28,13 +28,10 @@ class ViewController: UIViewController {
     
     @IBAction func saveButton(_ sender: Any) {
         print("Action")
-              
               // Генерируем случайный эмодзи (замените EmojiProvider.random() на вашу реализацию)
               let emoji = EmojiProvider.random()
-              
               // Сохраняем эмодзи
               save(emoji)
-              
               // Перезагружаем виджеты
               WidgetCenter.shared.reloadTimelines(ofKind: "MyWidget") // kind одинаковый должен быть!!!
     }
