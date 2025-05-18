@@ -19,10 +19,10 @@ class ViewController: UIViewController {
     //let userDefaults = UserDefaults(suiteName: "group.com.kaska.SpeedTracker")
    
     // переменная чтоб обмениваться данными между виджетом и очновным приложением
-    var emojiData: Data? {
+    var emojiDataa: Data? {
         didSet {
             // Сохраняем данные в UserDefaults
-            saveEmojiData(emojiData)
+            saveEmojiData(emojiDataa)
         }
     }
     
@@ -74,7 +74,7 @@ class ViewController: UIViewController {
         guard let data = try? JSONEncoder().encode(emoji) else {
             return
         }
-        emojiData = data
+        emojiDataa = data
     }
 
     // Функция для сохранения данных в UserDefaults
